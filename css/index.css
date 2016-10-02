@@ -1,0 +1,197 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+
+	@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(/fonts/material_icon.woff2) format('woff2');
+}
+.preloader-wrapper {
+    display: flex;
+ 
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+	.card .card-title {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+}
+.card .card-title>i.material-icons.right {
+    top: -7px;
+    position: relative;
+    right: -7px;
+}
+.card .card-image {
+    position: relative;
+    height: 230px;
+}
+
+
+
+/*.card .card-title {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+    background-color: #9E9E9E;
+    margin: -20px -20px;
+    padding: 20px;
+    color: #ffffff !important;
+}
+
+
+
+
+*/
+	
+	
+	 img.lazy {
+    /*    width: 700px; 
+        height: 467px; 
+        display: block;
+        
+         optional way, set loading as background */
+        background-image: url('http://jquery.eisbehr.de/lazy/images/loading.gif');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+	
+	
+
+
+.seen {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+.card .card-reveal {
+  
+    /*position: fixed!Important;*/
+
+}
+.card .card-reveal .card-title {
+    cursor: pointer;
+    display: block;
+
+}
+.card-reveal > iframe {
+    width: 100% !Important;
+    height: 1;
+}
+
+ul.bar {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: -2.5rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    z-index: 99999999;
+}
+li.bara {
+    -webkit-transition: 100ms ease 0s;
+    -moz-transition: 100ms ease 0s;
+    -o-transition: 100ms ease 0s;
+    -ms-transition: 100ms ease 0s;
+    transition: 100ms ease 0s;
+    display: inline-block;
+    width: 3rem;
+    margin: 10px 0;
+    font: bold 2rem/3rem "Open Sans", Helvetica, sans-serif;
+    background: #FFFBF5;
+    text-align: center;
+    -webkit-border-radius: 3rem;
+    border-radius: 3rem;
+}
+ul .active {
+    -webkit-transition: 500ms ease 0s;
+    -moz-transition: 500ms ease 0s;
+    -o-transition: 500ms ease 0s;
+    -ms-transition: 500ms ease 0s;
+    transition: 500ms ease 0s;
+    margin: 0 10px 0 0px;
+    padding: 10px 0;
+    box-shadow: 1px 1px 0 #404040, 2px 2px 0 #404040, 3px 3px 0 #404040, 4px 4px 0 #404040, 5px 5px 0 #404040, 6px 6px 0 #404040, 7px 7px 0 #404040, 8px 8px 0 #404040, 9px 9px 0 #404040;
+}
+
+.separator > a >img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    height: 100%;
+}
+.card .card-content .card-title {
+    line-height: 2;
+}
